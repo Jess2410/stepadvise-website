@@ -1,0 +1,67 @@
+.about_h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #ffffff;
+  color: #fff;
+  /* max-width: fit-content; */
+  text-transform: uppercase;
+  text-align: right;
+  display: block;
+  line-height: 3rem;
+}
+
+.about {
+  position: relative;
+  width: 95%;
+  display: flex;
+  margin: 100px auto;
+  height: auto;
+}
+
+.about .contentBx {
+  background: #6385a0;
+  padding: 100px;
+  width: 80%;
+}
+/* .heading {
+  color: rgb(0, 0, 0);
+  font-size: 43px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+} */
+.text {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  line-height: 2rem;
+  /* padding: 2rem; */
+}
+.about .imgBx {
+  background: url("../../public/assets/cédric.jpg");
+  width: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 991px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .contentBx,
+  .about .imgBx {
+    width: 100%;
+    padding: 50px;
+    min-height: 600px;
+    text-align: center;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /* .about .imgBx {
+  } */
+}

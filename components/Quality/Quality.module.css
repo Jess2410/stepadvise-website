@@ -1,0 +1,40 @@
+.quality_sec {
+  padding: 100px;
+  background: linear-gradient(to right, #dadde0, rgba(228, 228, 228, 0.585)),
+    url(/assets/qualite.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  /* opacity: .5; */
+}
+.quality_h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #304b52;
+  max-width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* background-color: rgba(255, 255, 255, 0.76); */
+}
+
+.quality_p {
+  text-align: justify;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  /* background-color: rgba(255, 255, 255, 0.76); */
+}
+
+@media (max-width: 1280px) {
+  .quality_sec {
+    padding: 50px;
+  }
+  .quality_h3 {
+    font-size: 30px;
+  }
+
+  .quality_p {
+    font-size: 18px;
+  }
+}

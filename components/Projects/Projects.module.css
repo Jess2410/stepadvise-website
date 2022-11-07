@@ -1,0 +1,44 @@
+.projects_h3{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #304B52;
+    max-width: fit-content;
+    /* margin: auto;
+    text-align: center; */
+    text-transform: uppercase;
+}
+
+.services_sec{
+padding: 100px;
+}
+
+.projects_images_content{
+    position : relative;
+    display : grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.box{
+    width: 380px;
+    margin : 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(87, 86, 86, 0.103);
+
+ }
+.iconBx{
+    /* margin-top: 25px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconBx img{
+    object-fit: cover;
+}

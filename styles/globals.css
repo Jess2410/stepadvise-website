@@ -24,3 +24,9 @@ a {
     background: black;
   }
 }
+
+.nav-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

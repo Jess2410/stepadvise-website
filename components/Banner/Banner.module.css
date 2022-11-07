@@ -1,0 +1,46 @@
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #43657ed0, rgba(163, 114, 101, 0)),
+    url(/assets/bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  background-size: cover;
+}
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+  max-width: 1000px;
+  padding: 100px;
+}
+.banner_h2 {
+  color: rgb(0, 0, 0);
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1em;
+}
+.banner_h2_span {
+  color: rgb(255, 255, 255);
+}
+.banner_h3 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 3px;
+  /* line-height: 0.5em; */
+}
+
+@media (max-width: 768px) {
+  .banner_text {
+    padding: 20px;
+  }
+  .banner_h2 {
+    font-size: 40px;
+  }
+}
