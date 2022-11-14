@@ -18,8 +18,8 @@ export default function Quality() {
       <br />
       <section
         className={styles.quality_sec}
-        data-aos='fade-up'
-        data-aos-duration='1000'
+        // data-aos='fade-up'
+        // data-aos-duration='1000'
       >
         <h3 className={styles.quality_h3}>Les engagements Stepadvise</h3>
         <p className={styles.quality_p}>Maitrise du terrain </p>

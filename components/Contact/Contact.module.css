@@ -9,6 +9,7 @@
   background-position: 10% 20%;
   flex-wrap: wrap;
   align-content: flex-start;
+  overflow-x: hidden;
 }
 .contact h3,
 .contact p {

@@ -8,6 +8,7 @@
   background-position: bottom;
   display: flex;
   background-size: cover;
+  overflow-x: hidden;
 }
 .banner_text {
   display: flex;

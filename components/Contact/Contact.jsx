@@ -58,7 +58,7 @@ export default function Contact() {
       className={styles.contact}
       id='contact'
       data-aos='fade-right'
-      data-aos-duration='3000'
+      data-aos-duration='1500'
     >
       <h2 className={styles.projects_h3}>{title}</h2>
       <p>{subtitle}</p>

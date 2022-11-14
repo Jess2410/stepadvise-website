@@ -7,6 +7,7 @@
   align-items: center;
   position: relative;
   z-index: 10;
+  overflow-x: hidden;
 }
 .services_content {
   position: relative;
@@ -36,17 +37,17 @@
 .services_items {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
   max-width: 100%;
   margin-top: 40px;
 }
 
 .services_box {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
   background: #fff;
-  padding: 40px;
+  padding: 30px;
   cursor: pointer;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }

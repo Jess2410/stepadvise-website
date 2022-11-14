@@ -18,7 +18,11 @@ export default function Footer() {
       data-aos-duration='3000'
     >
       <p>
-        <a className={styles.copyright} href='https://www.jess-portfolio.fr/'>
+        <a
+          className={styles.copyright}
+          href='https://www.jess-portfolio.fr/'
+          target='blank'
+        >
           Design & Developed by Jess.
         </a>
       </p>
