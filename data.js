@@ -2,10 +2,10 @@
 
 // import serviceIcon from "../stepadvise/public/assets/serviceIcon.png"
 
-import tlpe from "../stepadvise-website/public/assets/tlpe.png";
-import pe from "../stepadvise-website/public/assets/pe.png";
-import law from "../stepadvise-website/public/assets/law.png";
-import amo from "../stepadvise-website/public/assets/amo.png";
+// import tlpe from "../stepadvise-website/public/assets/tlpe.png";
+// import pe from "../stepadvise-website/public/assets/pe.png";
+// import law from "../stepadvise-website/public/assets/law.png";
+// import amo from "../stepadvise-website/public/assets/amo.png";
 
 export const navData = {
   items: [
@@ -30,7 +30,7 @@ export const servicesData = {
 
   services: [
     {
-      src: amo,
+      // src: amo,
       img: "/assets/amo-modal.jpg",
       name: "Assistant Maitre d’ouvrage ",
       description: "Mobilier urbain",
@@ -47,7 +47,7 @@ export const servicesData = {
       ],
     },
     {
-      src: tlpe,
+      // src: tlpe,
       img: "/assets/amo-modal.jpg",
       name: "TLPE",
       description: "Audit & Gestion",
@@ -63,7 +63,7 @@ export const servicesData = {
         "StepAdvise vous apporte les outils et les moyens (règlementaires, digitaux et présence terrain) ainsi qu’un savoir faire pour disposer d’une base de données fiable. En effet, nous vous permettons de recenser tout le parc publicitaire et toutes les enseignes commerciales présents sur votre territoire. L’ensemble de ces matériels sera mesuré dans le détail, photographié et géopositionné. Ainsi vous serez en capacité d’établir une taxation juste. StepAdvise favorise également les échanges réguliers avec les agents territoriaux (formation possible), les administrés et les commerçants (organisations de réunions d’informations) pour une bonne gestion de ce volet fiscal et économique.",
     },
     {
-      src: law,
+      // src: law,
       name: "RLP(i)",
       description: "Mise en application",
       subtitle: "le respect de votre règlement local de publicité",
@@ -71,7 +71,7 @@ export const servicesData = {
         "C'est un texte légal précisant les règles applicables localement en matière de publicité extérieure. Ces règles sont plus restrictives que les règles générales. Le règlement peut être communal (il s'applique à une seule commune) ou intercommunal (il s'applique à plusieurs communes appartenant à un établissement public de coopération intercommunale - EPCI).L'installation d'une publicité ou d'une enseigne doit être conforme à des conditions de densité et de format. Elle doit faire l'objet d'une déclaration ou d'une autorisation préalable auprès de l’autorité compétente.StepAdvise vous délivre un diagnostic global du parc publicitaire & enseigne présent sur votre territoire. Ainsi, nous vous accompagnons dans le suivi du respect des règles générales ou celles de votre RLP.En effet, nous vous remontons toutes les infractions relevées sur le terrain en vous communiquant les éléments factuels qui vous permettront de sanctionner le cas échéant le contrevenant. D’autre part, StepAdvise vous aiguille sur la compréhension et l’interprétation des textes. Enfin, notre société vous aide dans l’analyse des nouveaux dossiers d’implantations des enseignes et des mobiliers publicitaires afin de valider (ou pas) la demande d’installation.",
     },
     {
-      src: pe,
+      // src: pe,
       name: "PUBLICITE EXTERIEURE",
       description: "Mise en application",
       subtitle:
