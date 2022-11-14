@@ -1,11 +1,6 @@
 import React from "react";
 import styles from "./Modal_AMO.module.css";
 import Image from "next/image";
-import tlpe from "../../public/assets/tlpe.png";
-import pe from "../../public/assets/pe.png";
-import law from "../../public/assets/law.png";
-import amo from "../../public/assets/amo.png";
-import amo2 from "../../public/assets/amo2.jpg";
 import Link from "next/link";
 
 const Modal_AMO = ({ onClose }) => {
