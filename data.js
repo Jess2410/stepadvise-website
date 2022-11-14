@@ -2,12 +2,6 @@
 
 // import serviceIcon from "../stepadvise/public/assets/serviceIcon.png"
 
-import projet1 from "./public/assets/projet1.jpg";
-import projet2 from "../stepadvise-website/public/assets/projet2.jpg";
-import projet3 from "../stepadvise-website/public/assets/projet3.jpg";
-import projet4 from "../stepadvise-website/public/assets/projet4.jpg";
-import projet5 from "../stepadvise-website/public/assets/projet5.jpg";
-import projet6 from "../stepadvise-website/public/assets/projet6.jpg";
 import tlpe from "../stepadvise-website/public/assets/tlpe.png";
 import pe from "../stepadvise-website/public/assets/pe.png";
 import law from "../stepadvise-website/public/assets/law.png";
@@ -103,28 +97,28 @@ export const aboutData = {
     "La compétence de StepAdvise sur le milieu de l’Outdoor et de ses acteurs sera un avantage dans votre volonté de développer votre notoriété via ce canal publicitaire. StepAdvise s’appuie sur un réfèrent juridique spécialisé dans le droit des contrats publics et dispose de solutions digitales adaptées à la gestion des collectivités. C’est pourquoi, actif sur tout le territoire, StepAdvise vous propose son savoir faire afin de faciliter votre processus décisionnel.",
 };
 
-export const projectsData = {
-  images: [
-    {
-      src: projet1,
-    },
-    {
-      src: projet2,
-    },
-    {
-      src: projet3,
-    },
-    {
-      src: projet4,
-    },
-    {
-      src: projet5,
-    },
-    {
-      src: projet6,
-    },
-  ],
-};
+// export const projectsData = {
+//   images: [
+//     {
+//       src: projet1,
+//     },
+//     {
+//       src: projet2,
+//     },
+//     {
+//       src: projet3,
+//     },
+//     {
+//       src: projet4,
+//     },
+//     {
+//       src: projet5,
+//     },
+//     {
+//       src: projet6,
+//     },
+//   ],
+// };
 
 export const qualityData = {
   title: "Les engagements StepAdvise",

@@ -52,19 +52,39 @@ const Modal_AMO = ({ onClose }) => {
           <div className={styles.list_container}>
             <ul className={styles.modalList}>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>Lister précisément vos attentes</p>
               </li>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>Bâtir votre programme en mobilier urbain</p>
               </li>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>Echanger et communiquer avec les prestataires du marché</p>
               </li>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>Organiser votre appel d’offre</p>
               </li>
             </ul>
@@ -79,7 +99,12 @@ const Modal_AMO = ({ onClose }) => {
         </div>
         <div>
           <button className={styles.modalBtn} onClick={onClose}>
-            <Image src='/assets/close.png' alt='icon' width={30} height={30} />
+            <Image
+              src='/assets/close.png'
+              alt='icon close'
+              width={30}
+              height={30}
+            />
           </button>
         </div>
       </div>

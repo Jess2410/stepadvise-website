@@ -31,7 +31,12 @@ function Services() {
                 key={i}
               >
                 <div className={styles.services_iconBx}>
-                  <Image src={item.src} width={70} height={70} />
+                  <Image
+                    src={item.src}
+                    width={70}
+                    height={70}
+                    alt={item.name}
+                  />
                   <h2 className={styles.services_h2}>{item.name}</h2>
                   <p className={styles.services_descrption}>
                     {item.description}

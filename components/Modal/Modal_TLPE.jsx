@@ -15,7 +15,7 @@ const Modal_TLPE = ({ onClose }) => {
         <div className={styles.modalContent}>
           <div className={styles.services_iconBx}>
             <h2 className={styles.services_h2}>TLPE : Audit & Gestion </h2>
-            <Image src={tlpe2} width={370} height={190} />
+            <Image src={tlpe2} width={370} height={190} alt='tlpe' />
           </div>
 
           <p className={styles.modalText}>
@@ -32,18 +32,33 @@ const Modal_TLPE = ({ onClose }) => {
           <div className={styles.list_container}>
             <ul className={styles.modalList}>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>La publicité</p>
               </li>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>
                   Les enseignes (inscription, forme ou image apposée relative à
                   votre activité)
                 </p>
               </li>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>
                   {" "}
                   Les pré-enseignes (inscription, forme ou image indiquant la
