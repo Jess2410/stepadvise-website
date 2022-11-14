@@ -33,8 +33,8 @@ export default function About() {
           l’audit publicitaire. En effet, mon expérience auprès de nombreuses
           collectivités territoriales (Ile de France, Grand-Ouest et Sud de la
           France) associée à mon expertise sur les sujets des appels d’offres de
-          mobilier urbains, des RLPi ou de la TLPE seront des atouts indéniables
-          mis à votre service pour répondre à vos attentes.
+          mobiliers urbains, des RLPi ou de la TLPE seront des atouts
+          indéniables mis à votre service pour répondre à vos attentes.
         </p>
         <p className={styles.text}>
           La compétence de StepAdvise sur le milieu de l’Outdoor et de ses

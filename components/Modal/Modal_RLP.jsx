@@ -32,18 +32,19 @@ const Modal_RLP = ({ onClose }) => {
             <br />
             <br />
             StepAdvise vous délivre un diagnostic global du parc publicitaire &
-            enseigne présent sur votre territoire. Ainsi, nous vous accompagnons
-            dans le suivi du respect des règles générales ou celles de votre
+            enseignes présents sur votre territoire. Ainsi, nous vous
+            accompagnons dans le suivi du respect des règles générales ou celles
+            de votre
             <b> RLP</b>.
             <br />
             <br />
             En effet, nous vous remontons toutes les infractions relevées sur le
             terrain en vous communiquant les éléments factuels qui vous
             permettront de sanctionner le cas échéant le contrevenant. D’autre
-            part, StepAdvise vous aiguille sur la compréhension et
+            part, StepAdvise vous assiste sur la compréhension et
             l’interprétation des textes. Enfin, notre société vous aide dans
             l’analyse des nouveaux dossiers d’implantations des enseignes et des
-            mobiliers publicitaires afin de valider (ou pas) la demande
+            mobiliers publicitaires afin de valider ou réfuter la demande
             d’installation.
           </p>
           <p className={styles.modalP}>

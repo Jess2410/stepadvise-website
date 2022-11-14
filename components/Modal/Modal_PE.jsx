@@ -19,10 +19,10 @@ const Modal_PE = ({ onClose }) => {
           </div>
           <p className={styles.modalText}></p>
           <p className={styles.modalText}>
-            Aujourd’hui, la rue et l’espace public sont occupés par différents
-            supports de <b> publicité extérieure </b> (panneau 4X3, sucette
-            publicitaire, Abris voyageur, dispositif déroulant, écrans
-            digitaux….) et vous ne savez pas quel type de mobilier sélectionner
+            Aujourd’hui, l’espace public et la rue sont occupés par différents
+            supports de <b> publicité extérieure </b> (panneaux 4X3, sucettes
+            publicitaires, Abris voyageurs, dispositifs déroulants, écrans
+            digitaux….) et vous hésitez sur le type de mobilier à sélectionner
             pour une communication optimale.
           </p>
           <p className={styles.modalText}>
@@ -35,7 +35,7 @@ const Modal_PE = ({ onClose }) => {
               <li>
                 <Image src='/assets/check.png' width={20} height={20} />
                 <p>
-                  Déterminer le meilleur support pour communiquer sur votre
+                  Choisir le meilleur support de communication sur votre
                   actualité et votre société
                 </p>
               </li>
@@ -46,7 +46,7 @@ const Modal_PE = ({ onClose }) => {
               <li>
                 <Image src='/assets/check.png' width={20} height={20} />
                 <p>
-                  Annoncer un évènement : portes ouvertes, promotion
+                  Annoncer l&rsquo;évènementiel : portes ouvertes, promotion
                   exceptionnelle…
                 </p>
               </li>
@@ -54,14 +54,14 @@ const Modal_PE = ({ onClose }) => {
           </div>
 
           <p className={styles.modalText}>
-            D’autre part, StepAdvise est à même d’auditer votre parc
-            publicitaire existant et vous délivrer un diagnostic sur
-            l’efficience de votre réseau d’affichage.
+            StepAdvise, informée de vos attentes sur la cible recherchée,
+            analyse votre parc publicitaire existant et vous délivre un
+            diagnostic sur l’efficience de votre réseau d’affichage.
           </p>
           <p className={styles.modalText}>
-            StepAdvise saura être force de proposition pour la recherche d’
-            <b>espace publicitaire</b> afin de vous apporter le meilleur
-            maillage sur la ville dans le but d&rsquo;optimiser votre « 
+            StepAdvise est force de proposition pour la recherche d’
+            <b>espace publicitaire</b> et vous apporte le meilleur maillage sur
+            la ville dans le but d&rsquo;optimiser votre « 
             <b>ROI</b> ».
           </p>
           <p className={styles.modalP}>
