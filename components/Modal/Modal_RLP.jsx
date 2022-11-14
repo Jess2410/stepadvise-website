@@ -15,7 +15,12 @@ const Modal_RLP = ({ onClose }) => {
         <div className={styles.modalContent}>
           <div className={styles.services_iconBx}>
             <h2 className={styles.services_h2}>RLP(I) : Suivi</h2>
-            <Image src={rlpi2} width={270} height={190}></Image>
+            <Image
+              src='/assets/rlpi2.jpg'
+              width={270}
+              height={190}
+              alt='rlpi'
+            />
           </div>
           <p className={styles.modalText}>
             Le Règlement Local de Publicité (intercommunal) est un texte légal

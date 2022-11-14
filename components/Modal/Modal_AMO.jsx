@@ -17,7 +17,7 @@ const Modal_AMO = ({ onClose }) => {
             <h2 className={styles.services_h2}>
               Assistant Maître d&rsquo;Ouvrage (AMO)
             </h2>
-            <Image src={amo2} width={480} height={300} />
+            <Image src='/assets/amo2.jpg' width={480} height={300} alt='amo' />
           </div>
           <p className={styles.modalText}>
             Le choix d’un prestataire en <b>mobilier urbain</b> est pour les

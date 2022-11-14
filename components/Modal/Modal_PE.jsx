@@ -11,7 +11,7 @@ const Modal_PE = ({ onClose }) => {
         <div className={styles.modalContent}>
           <div className={styles.services_iconBx}>
             <h2 className={styles.services_h2}>Publicité Extérieure</h2>
-            <Image src={pe} width={480} height={300} />
+            <Image src={pe} width={480} height={300} alt='pre-enseigne' />
             <h4 className={styles.services_descrption}>
               Recherche d’une solution en communication extérieure
             </h4>
@@ -33,18 +33,33 @@ const Modal_PE = ({ onClose }) => {
           <div className={styles.list_container}>
             <ul className={styles.modalList}>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>
                   Choisir le meilleur support de communication sur votre
                   actualité et votre société
                 </p>
               </li>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>Diriger vos clients vers votre point de vente</p>
               </li>
               <li>
-                <Image src='/assets/check.png' width={20} height={20} />
+                <Image
+                  src='/assets/check.png'
+                  width={20}
+                  height={20}
+                  alt='icon check'
+                />
                 <p>
                   Annoncer l&rsquo;évènementiel : portes ouvertes, promotion
                   exceptionnelle…
