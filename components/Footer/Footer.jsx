@@ -15,7 +15,7 @@ export default function Footer() {
       className={styles.footer}
       data-aos='fade-bottom'
       data-aos-anchor-placement='top-bottom'
-      data-aos-duration='500'
+      data-aos-duration='1000'
     >
       <p>
         <a

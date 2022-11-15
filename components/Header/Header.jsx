@@ -59,7 +59,7 @@ export default function Header() {
           <ul
             className={styles.header_navbar}
             data-aos='fade-right'
-            data-aos-duration='500'
+            data-aos-duration='1000'
           >
             {checkWidth > 900 ? (
               items.map((item, i) => {
