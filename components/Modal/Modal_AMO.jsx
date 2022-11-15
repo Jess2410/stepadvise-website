@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./Modal_AMO.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import amo from "../../public/assets/amo_modal.jpg";
+// import amo from "../../public/assets/amo_modal.jpg";
 
 const Modal_AMO = ({ onClose }) => {
   const refModal = useRef(null);
@@ -30,7 +30,7 @@ const Modal_AMO = ({ onClose }) => {
               Assistant Maître d&rsquo;Ouvrage (AMO)
             </h2>
             <Image
-              src={amo}
+              src='/assets/amo_modal.jpg'
               width={480}
               height={300}
               layout='responsive'
