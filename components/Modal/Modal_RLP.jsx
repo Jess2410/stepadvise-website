@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Modal_AMO.module.css";
 import Image from "next/image";
 import tlpe from "../../public/assets/tlpe.png";
@@ -9,9 +9,25 @@ import amo from "../../public/assets/amo.png";
 import Link from "next/link";
 
 const Modal_RLP = ({ onClose }) => {
+  const refModal = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!refModal.current.contains(e.target)) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside, true);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+
   return (
     <div className={styles.modalBg}>
-      <div className={styles.modal}>
+      <div className={styles.modal} ref={refModal}>
         <div className={styles.modalContent}>
           <div className={styles.services_iconBx}>
             <h2 className={styles.services_h2}>RLP(I) : Suivi</h2>
@@ -20,6 +36,8 @@ const Modal_RLP = ({ onClose }) => {
               width={270}
               height={190}
               alt='rlpi'
+              layout='responsive'
+              className={styles.img}
             />
           </div>
           <p className={styles.modalText}>

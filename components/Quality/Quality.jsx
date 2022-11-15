@@ -30,7 +30,7 @@ export default function Quality() {
           Connaissance des textes règlementaires
         </p>
         <p className={styles.quality_p}>Présence nationale</p>
-        <p className={styles.quality_p}> Autonomie & réactivité</p>
+        <p className={styles.quality_p}>Autonomie & réactivité</p>
         <p className={styles.quality_p}>
           Communication entre les différents acteurs
         </p>

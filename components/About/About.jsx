@@ -21,7 +21,7 @@ export default function About() {
       className={styles.about}
       id='about'
       data-aos='fade-left'
-      data-aos-duration='500'
+      data-aos-duration='1000'
     >
       <div className={styles.contentBx}>
         <h2 className={styles.about_h3}>À propos</h2>

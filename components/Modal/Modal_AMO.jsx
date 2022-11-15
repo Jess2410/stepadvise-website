@@ -1,19 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Modal_AMO.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import amo2 from "../../public/assets/amo2.jpg";
+import amo from "../../public/assets/amo2.jpg";
 
 const Modal_AMO = ({ onClose }) => {
+  const refModal = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!refModal.current.contains(e.target)) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside, true);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+
   return (
     <div className={styles.modalBg}>
-      <div className={styles.modal}>
+      <div className={styles.modal} ref={refModal}>
         <div className={styles.modalContent}>
           <div className={styles.services_iconBx}>
             <h2 className={styles.services_h2}>
               Assistant Maître d&rsquo;Ouvrage (AMO)
             </h2>
-            <Image src={amo2} width={480} height={300} alt='amo' />
+            <Image
+              src={amo}
+              width={480}
+              height={300}
+              layout='responsive'
+              alt='amo'
+              className={styles.img}
+            />
           </div>
           <p className={styles.modalText}>
             Le choix d’un prestataire en <b>mobilier urbain</b> est pour les

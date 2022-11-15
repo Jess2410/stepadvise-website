@@ -12,6 +12,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.img {
+  max-width: 480px;
+  height: 300px;
+}
+
 .modal {
   /* min-width: auto; */
   height: auto;
@@ -31,11 +36,12 @@
   margin: auto;
   overflow-y: auto;
   /* display: flex; */
+  cursor: context-menu !important;
 }
 .modalContent {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .modalBtnContent {
   display: flex;
@@ -99,13 +105,14 @@
 .list_container li {
   list-style: none;
   display: flex;
-  align-items: left;
   font-size: 1.15rem;
   letter-spacing: 1.5px;
   /* height: 4rem; */
   text-align: left;
   height: fit-content;
   margin-bottom: 10px;
+  align-items: baseline;
+  text-align: left;
 }
 .list_container li img {
   margin-right: 15px;

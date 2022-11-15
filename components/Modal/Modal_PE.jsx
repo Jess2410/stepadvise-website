@@ -1,17 +1,40 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Modal_TLPE.module.css";
 import Image from "next/image";
 import pe from "../../public/assets/pe.jpg";
 import Link from "next/link";
 
 const Modal_PE = ({ onClose }) => {
+  const refModal = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!refModal.current.contains(e.target)) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside, true);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+
   return (
     <div className={styles.modalBg}>
-      <div className={styles.modal}>
+      <div className={styles.modal} ref={refModal}>
         <div className={styles.modalContent}>
           <div className={styles.services_iconBx}>
             <h2 className={styles.services_h2}>Publicité Extérieure</h2>
-            <Image src={pe} width={480} height={300} alt='pre-enseigne' />
+            <Image
+              src={pe}
+              width={270}
+              height={190}
+              alt='pre-enseigne'
+              layout='responsive'
+              className={styles.img}
+            />
             <h4 className={styles.services_descrption}>
               Recherche d’une solution en communication extérieure
             </h4>

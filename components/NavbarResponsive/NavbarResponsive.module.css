@@ -18,6 +18,9 @@
   text-align: center;
   color: white;
 }
+.NavbarResponsiveNone {
+  display: none;
+}
 @media (min-width: 900px) {
   .NavbarResponsive {
     display: none;

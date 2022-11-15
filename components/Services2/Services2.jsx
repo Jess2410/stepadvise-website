@@ -33,7 +33,7 @@ function Services2() {
       className={styles.services_sec}
       id='services'
       data-aos='fade-right'
-      data-aos-duration='500'
+      data-aos-duration='1000'
     >
       <div className={styles.services_content}>
         <div className={styles.services_mxw800}>
@@ -70,9 +70,7 @@ function Services2() {
               </div>
             </div>
             {isOpen == "bloc1" && (
-              <Modal_AMO
-                onClose={() => setIsOpen(null, console.log(isOpen))}
-              ></Modal_AMO>
+              <Modal_AMO onClose={() => setIsOpen(false)}></Modal_AMO>
             )}
           </div>
 

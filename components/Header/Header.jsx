@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import { navData } from "../../data";
 import NavbarResponsive from "../NavbarResponsive/NavbarResponsive";
 
-export default function Header() {
+export default function Header({ onClose }) {
   //destructure navData
   const { items } = navData;
 
@@ -106,7 +106,9 @@ export default function Header() {
           </ul>
         </nav>
       </header>
-      {showNavbarResponsive && <NavbarResponsive />}
+      {showNavbarResponsive ? (
+        <NavbarResponsive onClose={() => setShowNavbarResponsive(false)} />
+      ) : null}
     </>
   );
 }
