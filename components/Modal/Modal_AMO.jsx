@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./Modal_AMO.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import amo from "../../public/assets/amo2.jpg";
+import amo from "../../public/assets/amo_modal.jpg";
 
 const Modal_AMO = ({ onClose }) => {
   const refModal = useRef(null);
