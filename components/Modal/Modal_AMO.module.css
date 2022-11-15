@@ -101,6 +101,7 @@
   align-items: center;
   font-size: 1.15rem;
   letter-spacing: 1.5px;
+  height: fit-content;
 }
 .list_container li img {
   margin-right: 15px;

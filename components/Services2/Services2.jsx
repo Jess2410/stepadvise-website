@@ -33,7 +33,7 @@ function Services2() {
       className={styles.services_sec}
       id='services'
       data-aos='fade-right'
-      data-aos-duration='3000'
+      data-aos-duration='500'
     >
       <div className={styles.services_content}>
         <div className={styles.services_mxw800}>
@@ -49,7 +49,7 @@ function Services2() {
           <div
             className={styles.services_box}
             data-aos='fade-right'
-            data-aos-duration='2000'
+            data-aos-duration='1000'
           >
             <div className={styles.services_iconBx}>
               <Image src={amo} width={70} height={70} alt='amo' />
@@ -80,7 +80,7 @@ function Services2() {
           <div
             className={styles.services_box}
             data-aos='fade-right'
-            data-aos-duration='3000'
+            data-aos-duration='1500'
             // data-aos-delay='600'
           >
             <div className={styles.services_iconBx}>
@@ -110,7 +110,7 @@ function Services2() {
           <div
             className={styles.services_box}
             data-aos='fade-right'
-            data-aos-duration='3000'
+            data-aos-duration='2000'
             // data-aos-delay='900'
           >
             <div className={styles.services_iconBx}>
@@ -140,7 +140,7 @@ function Services2() {
           <div
             className={styles.services_box}
             data-aos='fade-right'
-            data-aos-duration='3000'
+            data-aos-duration='1500'
             // data-aos-delay='1200'
           >
             <div className={styles.services_iconBx}>

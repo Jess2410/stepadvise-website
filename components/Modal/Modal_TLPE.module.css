@@ -102,8 +102,9 @@
   align-items: center;
   font-size: 1.15rem;
   letter-spacing: 1.5px;
-  height: 4rem;
+  /* height: 4rem; */
   text-align: left;
+  height: fit-content;
   margin-bottom: 10px;
 }
 .list_container li img {

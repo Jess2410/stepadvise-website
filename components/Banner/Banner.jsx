@@ -21,7 +21,7 @@ export default function Banner() {
         <h2
           className={styles.banner_h2}
           data-aos='fade-right'
-          data-aos-duration='2000'
+          data-aos-duration='1000'
         >
           {title} <br />
           <span className={styles.banner_h2_span}>{span}</span>
@@ -29,7 +29,7 @@ export default function Banner() {
         <h3
           className={styles.banner_h3}
           data-aos='fade-left'
-          data-aos-duration='2000'
+          data-aos-duration='1000'
         >
           {subtitle}
         </h3>
