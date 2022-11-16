@@ -19,7 +19,7 @@ const Modal_AMO = ({ onClose }) => {
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
-  }, []);
+  }, [onClose]);
 
   return (
     <div className={styles.modalBg}>

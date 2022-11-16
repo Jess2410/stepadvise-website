@@ -1,5 +1,5 @@
 .services_sec {
-  /* background: #fff; */
+  background: #fff;
   padding: 100px;
   min-height: 100vh;
   display: flex;
@@ -7,6 +7,7 @@
   align-items: center;
   position: relative;
   z-index: 10;
+  overflow-x: hidden;
 }
 .services_content {
   position: relative;
@@ -28,25 +29,26 @@
 }
 .services_p {
   position: relative;
-  font-size: 18px;
+  font-size: 1.25rem;
   margin-bottom: 60px;
   font-weight: 300;
   letter-spacing: 1px;
 }
 .services_items {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
   max-width: 100%;
   margin-top: 40px;
 }
 
 .services_box {
-  width: 250px;
+  width: 280px;
   margin: 0 auto;
   background: #fff;
-  padding: 40px;
+  padding: 30px;
   cursor: pointer;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
@@ -60,17 +62,48 @@
 }
 .services_description {
   font-size: 18px;
+  background-color: #6385a0;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .services_transition {
   background-color: #6385a0;
   height: 30vh;
   width: 100%;
-  /* margin-top: 60vh; */
-  margin-bottom: 10%;
   position: absolute;
   z-index: -1;
   bottom: 0;
+}
+.services_description2 {
+  height: 150px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+}
+.button {
+  border: #6385a0 1px solid;
+  color: #6385a0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: block;
+  justify-content: flex-end;
+  /* margin: 15px auto; */
+  padding: 15px 15px;
+  height: fit-content;
 }
 
 @media (max-width: 1280px) {
@@ -81,7 +114,7 @@
     font-size: 35px;
   }
   .services_p {
-    font-size: 16px;
+    font-size: 1.25rem;
   }
 
   .services_h2 {
@@ -99,5 +132,12 @@
     position: absolute;
     z-index: -1;
     bottom: 0;
+  }
+  @media (max-width: 768) {
+    .services_description {
+      font-size: 1rem;
+      text-align: center;
+      min-height: 150px;
+    }
   }
 }

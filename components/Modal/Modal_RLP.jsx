@@ -1,11 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./Modal_AMO.module.css";
 import Image from "next/image";
-import tlpe from "../../public/assets/tlpe.png";
-import pe from "../../public/assets/pe.png";
-import law from "../../public/assets/law.png";
-import rlpi2 from "../../public/assets/rlpi2.jpg";
-import amo from "../../public/assets/amo.png";
 import Link from "next/link";
 
 const Modal_RLP = ({ onClose }) => {
@@ -23,7 +18,7 @@ const Modal_RLP = ({ onClose }) => {
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
-  }, []);
+  }, [onClose]);
 
   return (
     <div className={styles.modalBg}>

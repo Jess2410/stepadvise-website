@@ -1,11 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./Modal_TLPE.module.css";
 import Image from "next/image";
-import tlpe from "../../public/assets/tlpe.png";
 import tlpe2 from "../../public/assets/tlpe2.jpg";
-import pe from "../../public/assets/pe.png";
-import law from "../../public/assets/law.png";
-import amo from "../../public/assets/amo.png";
 import Link from "next/link";
 
 const Modal_TLPE = ({ onClose }) => {
@@ -23,7 +19,7 @@ const Modal_TLPE = ({ onClose }) => {
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
-  }, []);
+  }, [onClose]);
 
   return (
     <div className={styles.modalBg}>
