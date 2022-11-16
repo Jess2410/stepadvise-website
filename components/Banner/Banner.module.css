@@ -30,7 +30,7 @@
 }
 .banner_h3 {
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 35px;
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 3px;
@@ -43,5 +43,8 @@
   }
   .banner_h2 {
     font-size: 35px;
+  }
+  .banner_h3 {
+    font-size: 1rem;
   }
 }

@@ -44,12 +44,14 @@
     padding: 10px;
     font-size: 10px;
     text-align: center;
+    width: 100%;
   }
   .quality_h3 {
     font-size: 25px;
   }
 
   .quality_p {
+    text-align: center;
     font-size: 16px;
   }
 }

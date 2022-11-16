@@ -65,11 +65,7 @@
 .contactForm .row100 textarea {
   height: 100px;
 }
-.contactForm .row100 input::placeholder,
-.contactForm .row100 textarea::placeholder {
-  color: #304b52;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
 .contactForm .row100 input[type="submit"] {
   background: #304b52;
   color: #fff;
@@ -116,6 +112,27 @@
   }
   .contactForm .row100 input,
   .contactForm .row100 textarea {
-    margin: 0;
+    margin: 5px;
+  }
+
+  .Contact_contactForm__GofFJ {
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .contactForm .row100 .inputBx50 {
+    margin: 0 0px;
+  }
+  .contactForm .row100 .inputBx100 {
+    margin: 0 0px;
+  }
+  .contactForm .row100 input[type="submit"] {
+    margin-top: 10px;
+  }
+  .contactForm .row100 input::placeholder,
+  .contactForm .row100 textarea::placeholder {
+    font-size: 1rem;
   }
 }

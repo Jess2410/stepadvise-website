@@ -41,14 +41,28 @@
   /* padding: 2rem; */
 }
 .about .imgBx {
-  background: url("../../public/assets/cedric.jpg");
+  background: url("../../public/assets/cédricNédélec.jpg");
   width: 30%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+.text2 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-align: center;
+  /* line-height: 2rem; */
+  /* padding: 2rem; */
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .about {
     flex-direction: column;
   }
@@ -58,10 +72,20 @@
     padding: 50px;
     min-height: 600px;
     text-align: center;
-    background-position: top;
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
+  /* .about .contentBx,
+  .about .imgBx p {
+  } */
   /* .about .imgBx {
   } */
+  .text2 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
 }

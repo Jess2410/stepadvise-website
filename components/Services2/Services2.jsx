@@ -33,7 +33,7 @@ function Services2() {
       className={styles.services_sec}
       id='services'
       data-aos='fade-right'
-      data-aos-duration='1000'
+      data-aos-duration='1500'
     >
       <div className={styles.services_content}>
         <div className={styles.services_mxw800}>
