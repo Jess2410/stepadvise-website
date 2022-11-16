@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1260px) {
   .contactForm .row100 {
     flex-direction: column;
   }
@@ -121,6 +121,10 @@
     max-width: 800px;
     margin: 0 auto;
     display: flex;
+
+    width: 100%;
+    margin: auto;
+    justify-content: center;
   }
   .contactForm .row100 .inputBx50 {
     margin: 0 0px;

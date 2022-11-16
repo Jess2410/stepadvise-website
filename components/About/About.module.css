@@ -62,7 +62,7 @@
   width: 30%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1260px) {
   .about {
     flex-direction: column;
   }
