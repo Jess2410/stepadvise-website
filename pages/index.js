@@ -19,7 +19,7 @@ export default function Home() {
       <Banner />
       <Services2 />
       <About />
-      {/* <Quality /> */}
+      <Quality />
       <Contact />
       <Footer />
     </div>
