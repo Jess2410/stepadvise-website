@@ -106,3 +106,16 @@
     padding: 40px;
   }
 }
+
+@media (max-width: 768px) {
+  .contactForm .row100 {
+    flex-direction: column;
+  }
+  .contactForm .row100 .inputBx50 {
+    width: 100%;
+  }
+  .contactForm .row100 input,
+  .contactForm .row100 textarea {
+    margin: 0;
+  }
+}
