@@ -69,7 +69,7 @@
   .about .contentBx,
   .about .imgBx {
     width: 100%;
-    padding: 50px;
+    padding: 30px;
     min-height: 600px;
     text-align: center;
     background-position: center;
@@ -81,8 +81,12 @@
   } */
   /* .about .imgBx {
   } */
-  .text2 {
-    color: rgb(0, 0, 0);
+
+  .about_h3 {
+    text-align: center;
+  }
+  .text {
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 1.5px;

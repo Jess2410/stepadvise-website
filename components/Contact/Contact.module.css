@@ -139,4 +139,9 @@
   .contactForm .row100 textarea::placeholder {
     font-size: 1rem;
   }
+  .contact p {
+    color: rgba(0, 0, 0, 0.685);
+    padding: 15px;
+    font-size: 1rem;
+  }
 }
