@@ -42,7 +42,7 @@ const Modal_PE = ({ onClose }) => {
           </div>
           <p className={styles.modalText}></p>
           <p className={styles.modalText}>
-            Aujourd’hui, l’espace public et la rue sont occupés par différents
+            Aujourd’hui, l’espace public et la rue sont occupés par multiples
             supports de <b> publicité extérieure </b> (panneaux 4X3, sucettes
             publicitaires, Abris voyageurs, dispositifs déroulants, écrans
             digitaux….) et vous hésitez sur le type de mobilier à sélectionner
