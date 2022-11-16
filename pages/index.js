@@ -4,7 +4,7 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Projects from "../components/Projects/Projects";
-import Quality from "../components/Quality/Engagements";
+import Quality from "../components/Quality/Quality";
 import Services2 from "../components/Services2/Services2";
 import Head from "next/head";
 import "../styles/Home.module.css";
@@ -30,6 +30,7 @@ export default function Home() {
       <Services2 />
       {/* <Quality /> */}
       <Engagements />
+      {/* <Quality /> */}
       <About />
       <Contact />
       <Footer />

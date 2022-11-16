@@ -5,7 +5,7 @@ import styles from "./Quality.module.css";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
-export default function Quality2() {
+export default function Quality() {
   // useEffect(() => {
   //   AOS.init();
   // }, []);
