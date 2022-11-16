@@ -101,9 +101,7 @@
     margin: auto;
     padding: 40px;
   }
-}
 
-@media (max-width: 1260px) {
   .contact {
     flex-direction: inherit;
   }
@@ -146,5 +144,8 @@
     color: rgba(0, 0, 0, 0.685);
     padding: 15px;
     font-size: 1rem;
+  }
+  .contactForm {
+    width: 80%;
   }
 }

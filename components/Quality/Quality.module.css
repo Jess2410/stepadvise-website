@@ -48,6 +48,8 @@
   }
   .quality_h3 {
     font-size: 25px;
+    text-align: center;
+    display: inline-block;
   }
 
   .quality_p {
