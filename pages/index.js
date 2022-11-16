@@ -4,15 +4,16 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Projects from "../components/Projects/Projects";
-import Quality from "../components/Quality/Quality";
+import Quality from "../components/Quality/Engagements";
 import Services2 from "../components/Services2/Services2";
 import Head from "next/head";
 import "../styles/Home.module.css";
+import { useEffect } from "react";
+import Engagements from "../components/Engagements/Engagements";
 
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -27,7 +28,8 @@ export default function Home() {
       <Header />
       <Banner />
       <Services2 />
-      <Quality />
+      {/* <Quality /> */}
+      <Engagements />
       <About />
       <Contact />
       <Footer />
