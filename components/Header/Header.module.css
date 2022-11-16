@@ -45,3 +45,10 @@
     flex-direction: column;
     text-align: center;
 } */
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-around;
+    padding: 25px 20px;
+  }
+}

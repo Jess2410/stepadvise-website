@@ -39,9 +39,9 @@
 
 @media (max-width: 768px) {
   .banner_text {
-    padding: 20px;
+    padding: 10px;
   }
   .banner_h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
