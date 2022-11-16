@@ -4,8 +4,8 @@ import styles from "./Header.module.css";
 import Link from "next/link";
 
 // importing aos
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 // import navData
 import { navData } from "../../data";
@@ -20,9 +20,9 @@ export default function Header({ onClose }) {
   const [toggleNav, setToggleNav] = useState(false);
   const [showNavbarResponsive, setShowNavbarResponsive] = useState(false);
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   const checkWidthFunc = () => {
     setcheckWidth(window.innerWidth);

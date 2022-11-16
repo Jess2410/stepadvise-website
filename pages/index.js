@@ -9,7 +9,15 @@ import Services2 from "../components/Services2/Services2";
 import Head from "next/head";
 import "../styles/Home.module.css";
 
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <Head>

@@ -16,9 +16,9 @@ export default function Contact() {
 
   const form = useRef();
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();

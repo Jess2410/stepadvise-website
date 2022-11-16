@@ -9,8 +9,8 @@ import law from "../../public/assets/law.png";
 import amo from "../../public/assets/amo.png";
 
 // importing aos
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 // import servicesData
 import { servicesData } from "../../data";
@@ -24,9 +24,9 @@ function Services2() {
 
   const [isOpen, setIsOpen] = useState(null);
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <section

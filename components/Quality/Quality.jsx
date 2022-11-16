@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import styles from "./Quality.module.css";
 
 // importing aos
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export default function Quality() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <>
@@ -18,8 +18,8 @@ export default function Quality() {
       <br />
       <section
         className={styles.quality_sec}
-        data-aos='fade-right'
-        data-aos-duration='1000'
+        // data-aos='fade-right'
+        // data-aos-duration='1000'
       >
         <h3 className={styles.quality_h3}>Les engagements Stepadvise</h3>
         <p className={styles.quality_p}>Maitrise du terrain </p>

@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import styles from "./Banner.module.css";
 
 // importing aos
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 // import navData
 import { bannerData } from "../../data";
@@ -11,9 +11,9 @@ import { bannerData } from "../../data";
 export default function Banner() {
   const { title, span, subtitle } = bannerData;
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <section className={styles.banner} id='home'>

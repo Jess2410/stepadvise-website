@@ -3,8 +3,8 @@ import styles from "./About.module.css";
 import Image from "next/image";
 
 // importing aos
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 //import aboutData
 import { aboutData } from "../../data";
@@ -12,9 +12,9 @@ import { aboutData } from "../../data";
 export default function About() {
   const { title, description1, description2 } = aboutData;
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <section
