@@ -104,6 +104,9 @@
 }
 
 @media (max-width: 1260px) {
+  .contact {
+    flex-direction: inherit;
+  }
   .contactForm .row100 {
     flex-direction: column;
   }

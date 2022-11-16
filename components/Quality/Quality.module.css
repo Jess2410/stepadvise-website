@@ -2,7 +2,7 @@
   padding: 100px;
   background: linear-gradient(to right, #dadde0, rgba(228, 228, 228, 0.585)),
     url(/assets/qualite.jpg);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   width: 80%;
   margin: auto;
