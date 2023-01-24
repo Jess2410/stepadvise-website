@@ -2,85 +2,87 @@
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 30px;
-  border-bottom: 5px solid #ffffff;
-  color: #fff;
-  /* max-width: fit-content; */
+  border-bottom: 5px solid #6385a0;
+  color: #6385a0;
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
   display: block;
   line-height: 3rem;
 }
 
 .about {
-  position: relative;
-  width: 95%;
-  display: flex;
-  margin: 100px auto;
-  height: auto;
+  margin: 50px auto;
+  /* width: 95%; */
+  display: grid;
+  grid-template: "text img ";
 }
 
 .about .contentBx {
-  background: #6385a0;
-  padding: 100px;
-  width: 80%;
+  background: #fff;
+  grid-area: "text";
+  /* padding: 0 20px; */
 }
-/* .heading {
-  color: rgb(0, 0, 0);
-  font-size: 43px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-} */
 .text {
-  color: #fff;
-  font-size: 1.15rem;
+  /* color: ##6385a0; */
+  font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-align: justify;
-  line-height: 2rem;
-  /* padding: 2rem; */
+  line-height: 1.6rem;
+  padding: 1rem;
 }
 .about .imgBx {
-  background: url("../../public/assets/cédricNédéléc.jpg");
-  width: 30%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  grid-area: "img";
+  float: left;
+  /* margin: 1rem; */
 }
-.text2 {
+/* .wrapper {
+  float: right;
+} */
+/* .text2 {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 1.5px;
   text-align: center;
-  /* line-height: 2rem; */
-  /* padding: 2rem; */
-}
-.flex {
+} */
+/* .flex {
   display: flex;
   flex-direction: column;
   width: 30%;
-}
+} */
 
-@media (max-width: 1260px) {
+@media (max-width: 425px) {
   .about {
+    display: "flex";
     flex-direction: column;
   }
-  .about .contentBx,
+  .about .imgBx {
+    float: inherit;
+  }
+  .about .wrapper {
+    float: inherit;
+  }
+  .about .text {
+    float: inherit;
+  }
+  .text {
+    padding: 0.5rem 2rem;
+  }
+
+  /* .about .contentBx,
   .about .imgBx {
     width: 100%;
-    padding: 30px;
+    padding: 10px 20px;
     min-height: 600px;
     text-align: center;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
-  /* .about .contentBx,
-  .about .imgBx p {
-  } */
-  /* .about .imgBx {
-  } */
 
   .about_h3 {
     text-align: center;
@@ -91,5 +93,26 @@
     font-weight: 300;
     letter-spacing: 1.5px;
     text-align: center;
+  } */
+}
+@media (min-width: 425px) {
+  .wrapper {
+    padding: 0 2rem;
   }
+  /* .about {
+    display: "flex";
+    flex-direction: column;
+  }
+  .about .imgBx {
+    float: inherit;
+  }
+  .about .wrapper {
+    float: inherit;
+  }
+  .about .text {
+    float: inherit;
+  }
+  .text {
+    padding: 0.5rem 2rem;
+  } */
 }

@@ -33,22 +33,25 @@
   margin-bottom: 60px;
   font-weight: 300;
   letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .services_items {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 1px;
+  row-gap: 20px;
   max-width: 100%;
   margin-top: 40px;
 }
 
 .services_box {
-  width: 280px;
+  max-width: 220px;
   margin: 0 auto;
   background: #fff;
-  padding: 30px;
+  padding: 20px 15px;
   cursor: pointer;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
@@ -62,7 +65,12 @@
 }
 .services_description {
   font-size: 18px;
-  background-color: #6385a0;
+  background: rgb(99, 133, 160);
+  background: linear-gradient(
+    20deg,
+    rgba(99, 133, 160, 1) 0%,
+    rgb(134, 158, 179) 85%
+  );
   color: white;
   font-style: italic;
   text-transform: uppercase;
@@ -81,7 +89,7 @@
   bottom: 0;
 }
 .services_description2 {
-  height: 150px;
+  min-height: 200px;
   padding-top: 10px;
   font-size: 16px;
   text-align: justify;
