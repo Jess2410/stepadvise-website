@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel='icon' href='../public/favicon/favicon.jpg' />
+        <link rel='icon' href='/favicon/favicon.jpg' />
       </Head>
       <Component {...pageProps} />
       <ToastContainer />
