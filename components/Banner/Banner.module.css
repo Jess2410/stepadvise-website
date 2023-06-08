@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to right, #43657ed0, rgba(163, 114, 101, 0)),
+  background: linear-gradient(to top, #41598b, rgba(163, 114, 101, 0)),
     url(/assets/bg.jpg);
   background-size: cover;
   background-position: bottom;
@@ -39,10 +39,10 @@
 
 @media (max-width: 768px) {
   .banner_text {
-    padding: 10px;
+    padding: 2rem;
   }
   .banner_h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   .banner_h3 {
     font-size: 1rem;

@@ -6,7 +6,7 @@ import Modal from "../Modal/Modal";
 import tlpe from "../../public/assets/tlpe.png";
 import pe from "../../public/assets/pe.png";
 import law from "../../public/assets/law.png";
-import amo from "../../public/assets/amo.png";
+import amo from "../../public/assets/amo.svg";
 
 // importing aos
 // import AOS from "aos";
@@ -18,26 +18,40 @@ import Modal_AMO from "../Modal/Modal_AMO";
 import Modal_TLPE from "../Modal/Modal_TLPE";
 import Modal_RLP from "../Modal/Modal_RLP";
 import Modal_PE from "../Modal/Modal_PE";
+import CardService from "../CardService/CardService";
 
 function Services() {
   //   const { services } = servicesData;
 
   const [isOpen, setIsOpen] = useState(null);
 
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
+  const [checkWidth, setcheckWidth] = useState(null);
+
+  const checkWidthFunc = () => {
+    setcheckWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setcheckWidth(window.innerWidth);
+      window.addEventListener("resize", checkWidthFunc);
+    }
+    return () => {
+      window.removeEventListener("resize", checkWidthFunc);
+    };
+  }, []);
 
   return (
     <section
       className={styles.services_sec}
       id='services'
-      data-aos='fade-right'
-      data-aos-duration='1500'
+      // data-aos='fade-right'
+      // data-aos-duration='1500'
     >
       <div className={styles.services_content}>
         <div className={styles.services_mxw800}>
           <h3 className={styles.services_h3}>Nos Services</h3>
+          <hr />
           <p className={styles.services_p}>
             StepAdvise est à vos côtés pour le processus décisionnel sur 4 axes
             stratégiques.
@@ -45,21 +59,35 @@ function Services() {
         </div>
 
         <div className={styles.services_items}>
+          <CardService />
           {/* BLOC 1 */}
-          <div
+          {/* <div
             className={styles.services_box}
             data-aos='fade-right'
             data-aos-duration='0'
           >
+            <div className={styles.services_box2}>
+              <h3 className={styles.services_card_h3}>AMO</h3>
+              <h3 className={styles.services_h2}>Mobilier urbain</h3>
+            </div>
+
             <div className={styles.services_iconBx}>
-              <Image src={amo} width={70} height={70} alt='amo' />
-              <h2 className={styles.services_h2}>AMO</h2>
-              <p className={styles.services_description}>Mobilier urbain</p>
+              <div className={styles.services_header}>
+                {checkWidth > 768 ? (
+                  <div className={styles.services_header2}>
+                    <Image src={amo} width={40} height={40} alt='amo' />
+                  </div>
+                ) : (
+                  ""
+                )}
+              </div>
               <p className={styles.services_description2}>
                 La sélection de votre concessionnaire en mobilier urbain et la
                 gestion du renouvellement de votre contrat d’exploitation de
                 votre domaine public...
               </p>
+
+              <p className={styles.services_description}>Mobilier urbain</p>
               <div className={styles.button_container}>
                 <button
                   onClick={() => setIsOpen("bloc1")}
@@ -72,19 +100,22 @@ function Services() {
             {isOpen == "bloc1" && (
               <Modal_AMO onClose={() => setIsOpen(false)}></Modal_AMO>
             )}
-          </div>
+          </div> */}
 
           {/* BLOC 2 */}
-          <div
+          {/* <div
             className={styles.services_box}
             data-aos='fade-right'
             data-aos-duration='300'
-            // data-aos-delay='600'
           >
             <div className={styles.services_iconBx}>
-              <Image src={tlpe} width={70} height={70} alt='tlpe' />
-              <h2 className={styles.services_h2}>TLPE</h2>
-              <p className={styles.services_description}>Audit & Gestion</p>
+              <div className={styles.services_header}>
+                <div className={styles.services_header2}>
+                  <Image src={tlpe} width={50} height={50} alt='tlpe' />
+                  <h2 className={styles.services_h2}>TLPE</h2>
+                </div>
+              </div>
+              <h3 className={styles.services_card_h3}>Audit & Gestion</h3>
               <p className={styles.services_description2}>
                 Le suivi de votre TLPE. StepAdvise vous apporte les outils et
                 les moyens (règlementaires, digitaux et présence terrain)...
@@ -94,22 +125,22 @@ function Services() {
                   className={styles.button}
                   onClick={() => setIsOpen("bloc2")}
                 >
-                  En savoir plus...
+                  En savoir +
                 </button>
               </div>
             </div>
             {isOpen == "bloc2" && (
               <Modal_TLPE onClose={() => setIsOpen(false)}></Modal_TLPE>
             )}
-          </div>
+          </div> */}
 
           {/* BLOC 3 */}
 
-          <div
+          {/* <div
             className={styles.services_box}
             data-aos='fade-right'
             data-aos-duration='600'
-            // data-aos-delay='900'
+         
           >
             <div className={styles.services_iconBx}>
               <Image src={law} width={70} height={70} alt='rlpi' />
@@ -132,14 +163,14 @@ function Services() {
             {isOpen == "bloc3" && (
               <Modal_RLP onClose={() => setIsOpen(false)}></Modal_RLP>
             )}
-          </div>
+          </div> */}
 
           {/* BLOC 4 */}
-          <div
+          {/* <div
             className={styles.services_box}
             data-aos='fade-right'
             data-aos-duration='900'
-            // data-aos-delay='1200'
+       
           >
             <div className={styles.services_iconBx}>
               <Image src={pe} width={70} height={70} alt='pe' />
@@ -164,7 +195,7 @@ function Services() {
             {isOpen == "bloc4" && (
               <Modal_PE onClose={() => setIsOpen(false)}></Modal_PE>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.services_transition}></div>

@@ -13,9 +13,9 @@ export default function Footer() {
   return (
     <footer
       className={styles.footer}
-      data-aos='fade-bottom'
-      data-aos-anchor-placement='top-bottom'
-      data-aos-duration='1000'
+      // data-aos='fade-bottom'
+      // data-aos-anchor-placement='top-bottom'
+      // data-aos-duration='1000'
     >
       <p>
         <a
@@ -23,7 +23,7 @@ export default function Footer() {
           href='https://www.jess-portfolio.fr/'
           target='blank'
         >
-          Design & Developed by Jess.
+          Développement et Design par Jess.
         </a>
       </p>
     </footer>

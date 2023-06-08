@@ -20,8 +20,8 @@ export default function About() {
     <section
       className={styles.about}
       id='about'
-      data-aos='fade-left'
-      data-aos-duration='1000'
+      // data-aos='fade-left'
+      // data-aos-duration='1000'
     >
       <div className={styles.contentBx}>
         {/* <h2 className={styles.about_h3}>À propos</h2> */}
@@ -31,21 +31,24 @@ export default function About() {
               src={"/assets/cédric.jpg"}
               width={300}
               height={400}
+              className={styles.img}
               // layout='responsive'
               alt='Cédric Nédéléc'
-            ></Image>
-            <p
-              style={{
-                textAlign: "center",
-                fontStyle: "italic",
-                letterSpacing: "0.5px",
-                fontSize: "1.15rem",
-              }}
-            >
-              Cédric Nédélec
-            </p>
+            />
           </div>{" "}
           <p className={styles.text}>
+            <span
+              style={{
+                textAlign: "center",
+                fontFamily: '"Montserrat", sans-serif',
+                letterSpacing: "0.5px",
+                fontSize: "1.25rem",
+                fontWeight: 500,
+              }}
+            >
+              Cédric NÉDÉLEC
+            </span>
+            <br />
             Fort de mon activité professionnelle de plus de 20 ans dans la
             communication extérieure, j’ai créé StepAdvise spécialisée dans le
             conseil à la gestion du mobilier urbain, le respect de la
@@ -55,8 +58,7 @@ export default function About() {
             France) associée à mon expertise sur les sujets des appels d’offres
             de mobiliers urbains, des RLPi ou de la TLPE seront des atouts
             indéniables mis à votre service pour répondre à vos attentes.
-          </p>
-          <p className={styles.text}>
+            <br />
             La compétence de StepAdvise sur le milieu de l’Outdoor et de ses
             acteurs sera un avantage dans votre volonté de développer votre
             notoriété via ce canal publicitaire. StepAdvise s’appuie sur un
