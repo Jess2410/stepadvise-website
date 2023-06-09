@@ -15,11 +15,10 @@ function Pe() {
               <hr />
               <br />
               <div className={styles.services_img}></div>
-              <h4 className={styles.services_descrption}>
+              <h3 className={styles.services_h3}>
                 Recherche d’une solution en communication extérieure
-              </h4>
+              </h3>
             </div>
-            <p className={styles.modalText}></p>
             <p className={styles.modalText}>
               Aujourd’hui, l’espace public et la rue sont occupés par de
               multiples supports de <b> publicité extérieure </b> (panneaux 4X3,
