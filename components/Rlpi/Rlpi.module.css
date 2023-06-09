@@ -1,0 +1,91 @@
+/* .img {
+  max-width: 270px;
+  height: 190px;
+} */
+
+.services_img {
+  background: linear-gradient(to top, #41588baf, rgba(163, 114, 101, 0)),
+    url(/assets/rlpi2.jpg);
+  background-size: cover;
+  /* background-position: bottom; */
+  min-height: 350px;
+}
+.services_h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.modalContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 4rem 5rem;
+}
+.modalBtnContent {
+  display: flex;
+  justify-content: flex-end;
+}
+.modalRow {
+  display: flex;
+  justify-content: space-between;
+}
+.modalBtn {
+  right: 0;
+  justify-content: flex-end;
+  width: fit-content;
+  border-style: none;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.modalP {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+
+.modalText {
+  font-size: 1.2rem;
+  margin: 30px 0px;
+  text-align: justify;
+  letter-spacing: 1.5px;
+}
+
+.rowLeftCenter {
+  display: flex;
+  justify-content: Left;
+  align-items: center;
+}
+.modalList {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.info {
+  right: 0;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+}
+.link {
+  color: #7399cd;
+  text-decoration: underline;
+}
+.list_container {
+  height: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  border: #7399cd 1px solid;
+}
+
+@media (max-width: 768px) {
+  .modalText {
+    margin: 30px 0px;
+    text-align: center;
+  }
+}
