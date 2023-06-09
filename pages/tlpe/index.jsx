@@ -1,10 +1,11 @@
 import React from "react";
-import Amo from "../../components/Amo/Amo";
+import Header from "../../components/Header/Header";
 import Tlpe from "../../components/Tlpe/Tlpe";
 
 function index() {
   return (
     <div>
+      <Header />
       <Tlpe />
     </div>
   );

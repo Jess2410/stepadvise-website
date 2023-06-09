@@ -21,6 +21,18 @@
 .NavbarResponsiveNone {
   display: none;
 }
+@media (max-width: 900px) {
+  .NavbarResponsive {
+    margin-top: 3vh;
+    height: 97vh;
+  }
+}
+@media (max-width: 400px) {
+  .NavbarResponsive {
+    margin-top: 3vh;
+    height: 97vh;
+  }
+}
 @media (min-width: 900px) {
   .NavbarResponsive {
     display: none;

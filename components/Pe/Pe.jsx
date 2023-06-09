@@ -83,13 +83,12 @@ function Pe() {
               <br />
               <br />
               Pour davantage de renseignements,{" "}
-              <Link className={styles.link} href={"contact"}>
+              <Link className={styles.link} href={"/#contact"}>
                 contactez-nous
               </Link>
               .
             </p>
           </div>
-          <div></div>
         </div>
       </div>
     </div>

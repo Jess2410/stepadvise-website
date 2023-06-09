@@ -1,23 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+
 import styles from "./Services.module.css";
-import { motion } from "framer-motion";
-import Modal from "../Modal/Modal";
-import tlpe from "../../public/assets/tlpe.png";
-import pe from "../../public/assets/pe.png";
-import law from "../../public/assets/law.png";
-import amo from "../../public/assets/amo.svg";
 
 // importing aos
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
-// import servicesData
-import { servicesData } from "../../data";
-import Modal_AMO from "../Modal/Modal_AMO";
-import Modal_TLPE from "../Modal/Modal_TLPE";
-import Modal_RLP from "../Modal/Modal_RLP";
-import Modal_PE from "../Modal/Modal_PE";
 import CardService from "../CardService/CardService";
 
 function Services() {

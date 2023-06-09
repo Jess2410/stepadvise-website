@@ -7,8 +7,8 @@ export default function Engagements() {
   return (
     <section
       className={styles.services_sec}
-      // data-aos='fade-right'
-      // data-aos-duration='1500'
+      data-aos='fade-up'
+      data-aos-duration='1500'
     >
       <div className={styles.services_content}>
         <div className={styles.services_mxw800}>

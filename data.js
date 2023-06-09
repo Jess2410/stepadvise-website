@@ -9,11 +9,11 @@
 
 export const navData = {
   items: [
-    { href: "#home", name: "Accueil" },
-    { href: "#services", name: "Services" },
-    { href: "#about", name: "À propos" },
+    { href: "/#home", name: "Accueil" },
+    { href: "/#services", name: "Services" },
+    { href: "/#about", name: "À propos" },
     // { href: '#projects', name: 'Projets' },
-    { href: "#contact", name: "Contact" },
+    { href: "/#contact", name: "Contact" },
   ],
 };
 

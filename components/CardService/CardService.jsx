@@ -1,17 +1,14 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Modal_AMO from "../Modal/Modal_AMO";
 import styles from "./CardService.module.css";
 import tlpe from "../../public/assets/tlpe.svg";
 import pe from "../../public/assets/pub.svg";
 import law from "../../public/assets/law.svg";
 import amo from "../../public/assets/amo.svg";
-import Modal_TLPE from "../Modal/Modal_TLPE";
-import Modal_RLP from "../Modal/Modal_RLP";
-import Modal_PE from "../Modal/Modal_PE";
+import Link from "next/link";
 
 export default function CardService() {
-  const [isOpen, setIsOpen] = useState(null);
+  // const [isOpen, setIsOpen] = useState(null);
   const [checkWidth, setcheckWidth] = useState(null);
 
   const checkWidthFunc = () => {
@@ -29,13 +26,13 @@ export default function CardService() {
   }, []);
 
   return (
-    <div className={styles.services_items}>
+    <div
+      className={styles.services_items}
+      data-aos='fade-right'
+      data-aos-duration='1000'
+    >
       {/* BLOC 1 */}
-      <div
-        className={styles.services_box}
-        // data-aos='fade-right'
-        // data-aos-duration='0'
-      >
+      <div className={styles.services_box}>
         <div className={styles.services_box2}>
           <h3 className={styles.services_card_h3}>AMO</h3>
           <h3 className={styles.services_h2}>Mobilier urbain</h3>
@@ -57,55 +54,25 @@ export default function CardService() {
             domaine public...
           </p>
           <div className={styles.button_container}>
-            <button
-              onClick={() => setIsOpen("bloc1")}
+            <Link
+              href='/amo'
+              // onClick={() => setIsOpen("bloc1")}
               className={styles.button}
             >
-              En savoir plus...
-            </button>
+              En savoir +
+            </Link>
           </div>
         </div>
-        {isOpen == "bloc1" && (
+        {/* {isOpen == "bloc1" && (
           <Modal_AMO onClose={() => setIsOpen(false)}></Modal_AMO>
-        )}
+        )} */}
       </div>
 
       {/* BLOC 2 */}
-      {/* <div
-            className={styles.services_box}
-            data-aos='fade-right'
-            data-aos-duration='300'
-          >
-            <div className={styles.services_iconBx}>
-              <div className={styles.services_header}>
-                <div className={styles.services_header2}>
-                  <Image src={tlpe} width={50} height={50} alt='tlpe' />
-                  <h2 className={styles.services_h2}>TLPE</h2>
-                </div>
-              </div>
-              <h3 className={styles.services_card_h3}>Audit & Gestion</h3>
-              <p className={styles.services_description2}>
-                Le suivi de votre TLPE. StepAdvise vous apporte les outils et
-                les moyens (règlementaires, digitaux et présence terrain)...
-              </p>
-              <div className={styles.button_container}>
-                <button
-                  className={styles.button}
-                  onClick={() => setIsOpen("bloc2")}
-                >
-                  En savoir +
-                </button>
-              </div>
-            </div>
-            {isOpen == "bloc2" && (
-              <Modal_TLPE onClose={() => setIsOpen(false)}></Modal_TLPE>
-            )}
-          </div> */}
-      {/* BLOC 2 */}
       <div
         className={styles.services_box}
-        // data-aos='fade-right'
-        // data-aos-duration='0'
+        data-aos='fade-right'
+        data-aos-duration='1000'
       >
         <div className={styles.services_box2}>
           <h3 className={styles.services_card_h3}>TLPE</h3>
@@ -127,23 +94,24 @@ export default function CardService() {
             moyens (règlementaires, digitaux et présence terrain)...
           </p>
           <div className={styles.button_container}>
-            <button
-              onClick={() => setIsOpen("bloc2")}
+            <Link
+              href='/tlpe'
+              // onClick={() => setIsOpen("bloc1")}
               className={styles.button}
             >
-              En savoir plus...
-            </button>
+              En savoir +
+            </Link>
           </div>
         </div>
-        {isOpen == "bloc2" && (
+        {/* {isOpen == "bloc2" && (
           <Modal_TLPE onClose={() => setIsOpen(false)}></Modal_TLPE>
-        )}
+        )} */}
       </div>
       {/* BLOC 3 */}
       <div
         className={styles.services_box}
-        // data-aos='fade-right'
-        // data-aos-duration='0'
+        data-aos='fade-right'
+        data-aos-duration='1000'
       >
         <div className={styles.services_box2}>
           <h3 className={styles.services_card_h3}>RLP(i)</h3>
@@ -166,23 +134,23 @@ export default function CardService() {
             sur votre territoire...
           </p>
           <div className={styles.button_container}>
-            <button
-              onClick={() => setIsOpen("bloc1")}
+            <Link
+              href='/rlpi'
+              // onClick={() => setIsOpen("bloc1")}
               className={styles.button}
             >
-              En savoir plus...
-            </button>
+              En savoir +
+            </Link>
           </div>
         </div>
-        {isOpen == "bloc3" && (
-          <Modal_RLP onClose={() => setIsOpen(false)}></Modal_RLP>
-        )}
+
+        {/* <Modal_RLP onClose={() => setIsOpen(false)}></Modal_RLP> */}
       </div>
       {/* BLOC 4 */}
       <div
         className={styles.services_box}
-        // data-aos='fade-right'
-        // data-aos-duration='0'
+        data-aos='fade-right'
+        data-aos-duration='1000'
       >
         <div className={styles.services_box2}>
           <h3 className={styles.services_card_h3}>PUBLICITE EXTERIEURE</h3>
@@ -205,17 +173,18 @@ export default function CardService() {
             différents supports...
           </p>
           <div className={styles.button_container}>
-            <button
-              onClick={() => setIsOpen("bloc1")}
+            <Link
+              href='/pe'
+              // onClick={() => setIsOpen("bloc1")}
               className={styles.button}
             >
-              En savoir plus...
-            </button>
+              En savoir +
+            </Link>
           </div>
         </div>
-        {isOpen == "bloc4" && (
+        {/* {isOpen == "bloc4" && (
           <Modal_PE onClose={() => setIsOpen(false)}></Modal_PE>
-        )}
+        )} */}
       </div>
     </div>
   );

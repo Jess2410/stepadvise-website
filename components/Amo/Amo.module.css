@@ -1,15 +1,15 @@
 .services_img {
   background: linear-gradient(to top, #41588baf, rgba(163, 114, 101, 0)),
-    url(/assets/rlpi2.jpg);
+    url(/assets/amo_modal.jpg);
   background-size: cover;
-  min-height: 250px;
+  min-height: 300px;
   max-width: 50%;
   margin: auto;
 }
 .services_h2 {
-  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1px;
+  font-size: 3rem;
 }
 .modalContent {
   width: 100%;
@@ -39,9 +39,22 @@
   cursor: pointer;
   margin: 0.5rem;
 }
-
+.li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.li p {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 1rem;
+  /* margin: 30px 0px; */
+  /* text-align: justify; */
+  letter-spacing: 1.5px;
+}
 .modalP {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0.5rem;
 }
 
@@ -76,7 +89,7 @@
   height: fit-content;
   margin: auto;
   border-radius: 10px;
-  border: #7399cd 1px solid;
+  /* border: #7399cd 1px solid; */
 }
 
 @media (max-width: 768px) {

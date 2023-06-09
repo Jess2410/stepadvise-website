@@ -9,12 +9,11 @@
   z-index: 10;
   overflow-x: hidden;
   padding: 0 11vw;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .services_content {
   position: relative;
   width: 100%;
-  /* padding: 3rem; */
 }
 .services_h3 {
   font-family: "Montserrat", sans-serif;

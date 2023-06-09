@@ -18,9 +18,9 @@ export default function Contact() {
 
   const form = useRef();
 
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -58,9 +58,9 @@ export default function Contact() {
   return (
     <section
       className={styles.about}
-      id='about'
-      // data-aos='fade-left'
-      // data-aos-duration='1000'
+      id='contact'
+      data-aos='fade-down'
+      data-aos-duration='1000'
     >
       <div className={styles.services_content}>
         <div className={styles.services_mxw800}>
